@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.btn-gray {
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    &-gray {
+        background-color: $secondary_button_10;
+        color: $primary_100;
+        &:hover {
+            background-color: rgba(0, 36, 89, 0.1);
+        }
+    }
+    &-blue {
+        background-color: $primary_100;
+        color: $white_100;
+        &:hover {
+            background-color: #014dc0;
+        }
+    }
+}

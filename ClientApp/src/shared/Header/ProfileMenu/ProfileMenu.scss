@@ -1,0 +1,69 @@
+@import "../../../styles/variables.scss";
+
+.profile-menu{
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid $--gray20_100;
+    z-index: 99;
+    img{
+        cursor: pointer;
+        display: block;
+        width: 42px;
+        width: 42px;
+        border-radius: 50%;
+    }
+    &__list{
+        position: absolute;
+        background-color: $white_100;
+        top: calc(100% + 20px);
+        right: 0;
+        z-index: 100;
+        border: 1px solid $gray10_100;
+        box-shadow: 0 8px 16px $superblack_40;
+        border-radius: 4px;
+        width: 253px;
+        padding: 22px 16px 20px;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+    &__item{
+        cursor: pointer;
+        &:not(:last-child)
+        {
+            margin-bottom: 12px;
+        }
+    }
+    &__link{
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        color: $black_100;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+        &:hover{
+            color: $primary_100;
+        }
+    }
+    &__logout {
+        cursor: pointer;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+    }
+}
