@@ -16,6 +16,7 @@
     pointer-events: none;
     visibility: hidden;
     transition: all 0.3s ease;
+    z-index: 1000;
     &.active {
         opacity: 1;
         visibility: visible;
@@ -25,11 +26,13 @@
         position: relative;
         width: 360px;
         background-color: $white_100;
+        border-radius: 5px;
+        padding: 30px 50px 30px;
+    }
+    &__form{
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 5px;
-        padding: 30px 50px 30px;
     }
     &__title{
         color: $black_100;
@@ -81,5 +84,11 @@
         border: none;
         text-decoration: underline;
         cursor: pointer;
+    }
+    &__entry-title {
+        padding: 20px 0 15px;
+        text-align: center;
+        color: $black_100;
+        font-size: 20px;
     }
 }

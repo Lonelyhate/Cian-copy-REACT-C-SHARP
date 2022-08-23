@@ -12,7 +12,7 @@ const ProfileMenu: FC = () => {
     const [visable, setVisable] = useState<boolean>(false);
 
     return (
-        <button className="profile-menu">
+        <div className="profile-menu">
             <img src={avatarEmpty} alt="avatar" onClick={e => setVisable(!visable)} />
             <ul className={cn("profile-menu__list", {
                 active: visable
@@ -28,7 +28,7 @@ const ProfileMenu: FC = () => {
                     <button onClick={e => dispatch(logoutUser())} className="profile-menu__link profile-menu__logout">Выйти</button>
                 </li>
             </ul>
-        </button>
+        </div>
     );
 };
 

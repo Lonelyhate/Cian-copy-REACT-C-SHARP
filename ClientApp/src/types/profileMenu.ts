@@ -19,12 +19,13 @@ export type ProfileMenuType = {
         | UrlsEnum.PLACE_AN_AD
         | UrlsEnum.IPOTEKA
         | UrlsEnum.HELP_CENTER
+        | UrlsEnum.SVODKA
 };
 
 export const profileMenuArray: ProfileMenuType[] = [
     {
         name: ProfileMenuName.PROFILE,
-        link: UrlsEnum.PROFILE,
+        link: UrlsEnum.SVODKA,
     },
     {
         name: ProfileMenuName.PLACE_AN_AD,

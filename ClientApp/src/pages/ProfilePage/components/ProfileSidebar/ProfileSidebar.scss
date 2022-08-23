@@ -1,0 +1,38 @@
+.profile-sidebar{
+    width: 300px;
+    border-right: 1px solid #e4e4e4;
+    height: 100%;
+    padding: 20px 10px;
+    overflow-y: auto;
+    &__list {
+        border-top: 1px solid #e4e4e4;
+        padding-top: 8px;
+        padding-bottom: 20px;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #121212;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 10px 0 10px 7px;
+        transition: background-color 0.3s ease;
+        &.active {
+            background-color: hsla(0,0%,7%,.05);
+        }
+        &:hover {
+            background-color: hsla(0,0%,7%,.05);
+        }
+        svg {
+            height: 17px;
+            width: 17px;
+            margin-right: 15px;
+        }
+    }
+}
